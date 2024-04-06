@@ -5,8 +5,8 @@ on:
       - 'app/**'
       - .github/workflows/deploy-pr.yml
 
-  env:
-    REGISTRY: ghcr.io
+env:
+  REGISTRY: ghcr.io
 
 jobs:
   build-and-push-image:
