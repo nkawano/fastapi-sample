@@ -3,7 +3,7 @@ on:
   pull_request:
     paths:
       - 'app/**'
-      - .github/workflows/deploy-prs.yml
+      - .github/workflows/deploy-pr.yml
 
   env:
     REGISTRY: ghcr.io
@@ -35,4 +35,3 @@ jobs:
           push: true
           tags: ${{ steps.meta.outputs.tags }}
           labels: ${{ steps.meta.outputs.labels }}
-
